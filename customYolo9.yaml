@@ -1,0 +1,13 @@
+train: /workspace/yolov7/data/train/
+val: /workspace/yolov7/data/val/
+test: /workspace/yolov7/data/test/
+
+# number of classes
+nc: 5
+
+# class names
+names: [airplane,
+helicopter,
+fighter_jet,
+paragliding,
+drone]
