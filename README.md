@@ -18,6 +18,7 @@ This project involves the following key steps:
 This section describes the steps to set up the necessary packages and environment.
 ```bash
 pip install -r requirements.txt
+```
 
 ## Training
 Before starting the training process, data preparation and conversion are necessary.
@@ -26,6 +27,9 @@ Convert the JSON files stored in Google Drive to TXT format using the "update_an
 
 ```bash
 python train.py --batch 32 --epochs 100 --device=0 --img 320 --min-items 0 --close-mosaic 20 --data /workspace/yolov9/customYolo9.yaml --weights /workspace/yolov9/weights/gelan-e.pt --cfg models/detect/gelan-e.yaml --hyp /workspace/yolov9/data/hyps/hyp.scratch-high.yaml
+```
 
 ## Testing
+```bash
 python detect.py --source '/workspace/testimg/1517699_597.jpg' --img 640 --device 0 --weights '/workspace/runs/train/exp22/weights/best_striped.pt' --name exp22_test --conf-thres 0.5
+```
