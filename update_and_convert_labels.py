@@ -58,9 +58,16 @@ def convert_to_yolo(json_path, output_dir):
 
 
 def main():
-    input_dir = r'.\workspace\json_labels'  
-    output_dir = r'.\workspace\yolo_labels'  
-    image_dir = r'.\workspace\images'  
+    parser = argparse.ArgumentParser(description="Convert JSON files to YOLO format and update image dimensions.")
+    parser.add_argument('--json-folder', type=str, required=True, help='Path to the folder containing JSON files')
+    parser.add_argument('--txt-folder', type=str, required=True, help='Path to the folder to save TXT files')
+    parser.add_argument('--image-folder', type=str, required=True, help='Path to the folder containing images')
+
+    args = parser.parse_args()
+
+    input_dir = args.json_folder
+    output_dir = args.txt_folder
+    image_dir = args.image_folder
 
     for json_filename in os.listdir(input_dir):
         if json_filename.endswith('.json'):
