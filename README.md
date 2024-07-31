@@ -10,12 +10,21 @@ This project is an example of training and evaluating deep learning models for s
 ## Overview
 This project involves the following key steps:
 1. Prepareing custom dataset: Converting label files in JSON format to TXT format from images stored in Google Drive.
-[Download the dataset from Google Drive]([https://drive.google.com/uc?id=FILE_ID&export=download](https://drive.google.com/drive/folders/1XANY18zT8qBWTSP8uH8tW5PPtoHU-CEH?usp=drive_link](https://drive.google.com/drive/folders/1XANY18zT8qBWTSP8uH8tW5PPtoHU-CEH?usp=drive_link))
+[Download the dataset from Google Drive]([https://drive.google.com/uc?id=FILE_ID&export=download](https://drive.google.com/drive/folders/1XANY18zT8qBWTSP8uH8tW5PPtoHU-CEH?usp=drive_link](https://drive.google.com/drive/folders/1XANY18zT8qBWTSP8uH8tW5PPtoHU-CEH?usp=drive_link)))
 2. Training a deep learning model using the converted data.
 3. Detecting small objects in test images using the trained model.
 
 ## Installation
 This section describes the steps to set up the necessary packages and environment.
+1. Create a new conda environment.
+```bash
+conda create --name yolov9 python=3.8
+```
+2. Activate yolov9
+```bash
+conda activate yolov9
+```
+3. Install requirements
 ```bash
 pip install -r requirements.txt
 ```
