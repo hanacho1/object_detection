@@ -41,6 +41,7 @@ python train.py --batch 32 --epochs 100 --device=0 --img 320 --min-items 0 --clo
 ```
 
 ## Testing
+Test images are saved in the 'runs/detect/' folder.
 ```bash
 python detect.py --source '/workspace/testimg/1517699_597.jpg' --img 640 --device 0 --weights '/workspace/runs/train/exp22/weights/best_striped.pt' --name exp22_test --conf-thres 0.5
 ```
