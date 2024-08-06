@@ -35,7 +35,7 @@ Before starting the training process, data preparation and conversion are necess
 Convert the JSON files stored in Google Drive to TXT format using the "update_and_convert_labels.py" script.
 ```bash
 python update_and_convert_labels.py --json-folder /path/to/json/folder --txt-folder /path/to/txt/folder --image-folder /path/to/image/folder
-
+```
 ```bash
 python train.py --batch 32 --epochs 100 --device=0 --img 320 --min-items 0 --close-mosaic 20 --data /workspace/yolov9/customYolo9.yaml --weights /workspace/yolov9/weights/gelan-e.pt --cfg models/detect/gelan-e.yaml --hyp /workspace/yolov9/data/hyps/hyp.scratch-high.yaml
 ```
