@@ -45,3 +45,4 @@ Test images are saved in the 'runs/detect/' folder.
 ```bash
 python detect.py --source '/workspace/testimg/1517699_597.jpg' --img 640 --device 0 --weights '/workspace/runs/train/exp22/weights/best_striped.pt' --name exp22_test --conf-thres 0.5
 ```
+![Inference](https://github.com/hanacho1/object_detection/blob/main/runs/detect/exp22_test/817233_597.jpg)
