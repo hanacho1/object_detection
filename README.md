@@ -9,8 +9,8 @@ This project is an example of training and evaluating deep learning models for s
 
 ## Overview
 This project involves the following key steps:
-1. Prepareing custom dataset: Converting label files in JSON format to TXT format from images stored in Google Drive.
-[Download the dataset from Google Drive]([https://drive.google.com/uc?id=FILE_ID&export=download](https://drive.google.com/drive/folders/1XANY18zT8qBWTSP8uH8tW5PPtoHU-CEH?usp=drive_link](https://drive.google.com/drive/folders/1XANY18zT8qBWTSP8uH8tW5PPtoHU-CEH?usp=drive_link))
+1. Prepareing custom dataset: Converting label files in JSON format to TXT format from images stored in Google Drive.  
+[The converted dataset can be downloaded from Google Drive](https://drive.google.com/drive/folders/1fGphQBdjNC-qmcrF7iD3CvKIesHLK2qz?usp=sharing)
 2. Training a deep learning model using the converted data.
 3. Detecting small objects in test images using the trained model.
 
@@ -45,4 +45,5 @@ Test images are saved in the 'runs/detect/' folder.
 ```bash
 python detect.py --source '/workspace/testimg/1517699_597.jpg' --img 640 --device 0 --weights '/workspace/runs/train/exp22/weights/best_striped.pt' --name exp22_test --conf-thres 0.5
 ```
+### Result
 ![Inference](https://github.com/hanacho1/object_detection/blob/main/runs/detect/exp22_test/817233_597.jpg)
